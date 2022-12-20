@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head>
+        <!--<link rel="stylesheet" href="style.css">-->
+    </head>
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Sign up</h3>
+        <form action="#" id="form">
+            <div class="form-field">
+                <label for="dni">DNI:</label>
+                <input type="text" name="dni" id="dni" autocomplete="off" >
+                <small></small>
+            </div>
+
+            <div class="form-field">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" autocomplete="off">
+                <small></small>
+            </div>
+
+            <div class="form-field">
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" name="fecha" id="fecha" autocomplete="off">
+                <small></small>
+            </div>
+
+            <div class="form-field">
+                <label for="hijos">¿Tienes hijos/as?</label>
+                <label for="hijosSi">Sí</label>
+                <input type="radio" id="hijosSi" name="hijos" value="si">
+                <label for="hijosNo">No</label>
+                <input type="radio" id="hijosNo" name="hijos" value="no" checked>
+                <small></small>
+            </div>
+
+            <div class="form-field" id="numHijos" hidden>
+                <label for="numHijos">Número de hijos</label>
+                <input type="number" name="numHijos" id="numHijos" autocomplete="off" >
+                <small></small>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" autocomplete="off">
+                <small></small>
+            </div>
+
+            <div class="form-field">
+                <label for="pag">Pagina Web</label>
+                <input type="text" name="pag" id="pag" autocomplete="off">
+                <small></small>
+            </div>
+
+            <div class="form-field">
+                <label for="pass">Contraseña</label>
+                <input type="password" name="pass" id="pass" autocomplete="off">
+                <small></small>
+            </div>
+
+            <input type="submit" value="Comprobar">
+        </form>
+
+        <script src="scripts.js"></script>
+</body>
+
+</html>
