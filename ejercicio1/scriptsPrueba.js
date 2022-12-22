@@ -3,7 +3,7 @@ const wish=document.querySelector('#wishlist');
 lista.addEventListener('click',function(e){
     let encontrado = false;
     //Convierto la html collection en un array para poder usar sus propiedades
-    const listaHijos = Array.from(wish.children)
+    const listaHijos = wish.children
 //Reorro la lista buscando que el texto del primer hijo que es el span sea igual que el atributo
 //Data-name del li que provoca el evento
     for(let i=0; i < listaHijos.length; i++) {
@@ -30,6 +30,7 @@ lista.addEventListener('click',function(e){
 wish.addEventListener('click',function(e){
     //Para borrar recorro la lista comparando el contenido del primer hijo con el data-name del
     //elemento que ha provocado el evento
+
     for(let i=0; i < wish.children.length; i++) {
         if(wish.children[i].firstChild.textContent === e.target.dataset.name) {
             //Si lo encuentra que borre el elemento y le quite la clase
